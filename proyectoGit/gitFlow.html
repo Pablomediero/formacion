@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumen Git Flow</title>
+    <style>
+        body{
+            margin-left: 50px;
+            font-size: large;
+        }
+
+        i{
+            color: red;
+            margin-left: 50px;
+        }
+        .tabla{
+            text-align: center;
+            width: 1000px;
+        }
+        .tabl1{
+            text-align: center;
+             width: 300px;
+        }
+    </style>
+</head>
+<body>
+        <h1>GIT FLOW</h1>
+        <a href="https://www.atlassian.com/es/git/tutorials/comparing-workflows/gitflow-workflow#:~:text=Gitflow%20es%20un%20modelo%20alternativo,vez%20y%20quien%20lo%20populariz%C3%B3" target="_blank" >Link</a>
+        <h2>Ventajas</h2>
+        <ul>
+            <li>Este flujo de trabajo es ideal para los flujos de trabajo de software basados en publicaciones.</li>
+            <li>Gitflow ofrece un canal específico para las correcciones de producción.</li>
+        </ul>
+        <h2>Características</h2>
+        Utuliza 2 ramas
+        <ul>
+            <li>main: Historial de publicacion oficial</li>
+            <li>develop: Integracion para las funciones</li>
+        </ul>
+           <p>Para crear la rama develop se utiliza </p> 
+           <table class="tabl1">
+            <tr>
+                <th>Creación</th>
+            </tr>
+            <tr>
+                <td>
+                    <i>git flow init</i> 
+                </td>
+                
+            </tr>
+        </table>
+           <br>
+            
+        <h3>Ramas de Función:</h3>
+            <p>
+            LLamadas ramas feature utilizan develop como rama primaria(no interactuan directamente con main), al finalizar el 
+            trabajo de desarrollo hay que fusionar la rama con develop
+            <br>
+            <table class="tabla"> 
+                <tr>
+                    <th>Creación</th><th>Finalización</th>
+                </tr>
+                <tr>
+                    <td>
+                        <i>git flow feature start feature_branch</i> 
+                    </td>
+                    <td>
+                        <i>git flow feature finish feature_branch</i> 
+                    </td>
+                </tr>
+            </table>
+        <br>
+
+        <h3>Ramas de Publicación:</h3> 
+            Llamadas ramas release, cuando develop haya adquirido suficientes funciones para publicar, en esta rama
+            solo deben producirse las soluciones de errores, generacion de documentacion y tareas orientadas a la Publicación
+            cuando este lista se fusiona con main y se agrega un tag con número de versión y fusionarse con develop
+            <br>
+            <br>
+            <table class="tabla">
+                <tr>
+                    <th>Creación</th><th>Finalización</th>
+                </tr>
+                <tr>
+                    <td>
+                        <i>git flow release start 0.1.0</i>
+                    </td>
+                    <td>
+                        <i>git flow release finish '0.1.0</i>
+                    </td>
+                </tr>
+            </table>
+            
+        <h3> Rama de Correción:</h3> 
+            LLamadas ramas hotfix son las ramas de mantenimiento, sirven para reparar rapidamente las publicaciones en producción
+            están basadas en main(única rama a fusionar con main) y se debe marcar con un tag actualizado
+            esto permite que el equipo solucione las incidencias sin interrumpir el flujo de trabajo
+            <br>
+            <br>
+            <table class="tabla">
+                <tr>
+                    <th>Creación</th><th>Finalización</th>
+                </tr>
+                <tr>
+                    <td>
+                        <i>git flow hotfix start hotfix_branch</i>
+                    </td>
+                    <td>
+                        <i>git flow hotfix finish hotfix_branch</i>
+                    </td>
+                </tr>
+            </table>
+        </p>
+</body>
+</html>
