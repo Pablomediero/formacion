@@ -1,0 +1,23 @@
+https://www.youtube.com/watch?v=zrLf4KMs71E
+
+Instalar Google API: npm i googleapis
+En Google(Google API Console)
+    1.Crear nuevo proyecto
+    2.Habilitar API y Servicios
+        2.1.Buscar Google Calendar 
+        2.2.Habilitar
+    3.Ir a Dashboard->AUTH  
+        3.1.Pulsar en externo(Cualquier usuario que tenga cuenta de google)
+        3.2.Agregar nombre de app y correo 
+        3.3.Guardar
+    4.Crear credenciales Cli-Auth
+        4.1.Crear cliente y generar clave
+
+            ID_Cliente: 
+                891132833537-42n18kvjpt1lg3086udf4shgls0rnt8m.apps.googleusercontent.com
+            TOKEN: 
+                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
+        4.2.Editamos el cliente que acabamos de crear
+        4.3.Le aplicamos una URL de redireccionamiento al cliente https://developers.google.com/oauthplayground/
+            4.3.1.Entramos en ese enlace y en ajustes marcamos la opción de usar Auth Credenciales e introducimos el id y token
+        4.4.Indicamos que api queremos dar acceso, Google Calendar API y marcamos las 2 primeras opciones
