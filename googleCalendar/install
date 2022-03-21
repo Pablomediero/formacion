@@ -18,6 +18,12 @@ En Google(Google API Console)
             TOKEN: 
                 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
         4.2.Editamos el cliente que acabamos de crear
-        4.3.Le aplicamos una URL de redireccionamiento al cliente https://developers.google.com/oauthplayground/
+        4.3.Le aplicamos una URL de redireccionamiento al cliente https://developers.google.com/oauthplayground
             4.3.1.Entramos en ese enlace y en ajustes marcamos la opción de usar Auth Credenciales e introducimos el id y token
         4.4.Indicamos que api queremos dar acceso, Google Calendar API y marcamos las 2 primeras opciones
+        4.5.Agregamos en Pantalla de consentimiento un usuario de prueba con el email(Permisos de usuario)
+        4.6.Damos permiso al usuario
+    5.Refrescar token en oauthplayground
+
+    CODIGO
+    
