@@ -1,0 +1,7 @@
+<h2>Empleado</h2>
+<p>Nombre: {{nombre}}</p>
+<p>Apellido: {{apellido}}</p>
+<p>Edad: {{getEdad() <18 ? "Menor edad": "Mayor de Edad"}}</p>
+<p>Empresa: {{empresa.value}}</p>
+<input type="text" #empresa placeholder="Introduce Empresa" (keyup)="0">
+<br>
