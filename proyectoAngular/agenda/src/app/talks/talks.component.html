@@ -1,1 +1,2 @@
-<p *ngFor="let talk of talks; let i = index">{{talk.title}}</p>
+
+<app-talk *ngFor="let talk of talks; let i = index" [talk]="talk"></app-talk>

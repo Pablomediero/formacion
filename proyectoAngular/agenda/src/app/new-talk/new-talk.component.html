@@ -1,0 +1,8 @@
+<form (ngSubmit)="onSubmit()" [formGroup]="userForm">
+    <h2>Nueva Tarea</h2>
+    <label for="titulo">Titulo Tarea</label>
+    <input name="tituloNombre" id="titulo" type="text">
+    <label for="desc">Descripcion Tarea</label>
+    <input type="text" name="descNombre" id="desc" [formControl]="descriptionControl" >
+    <input type="submit">
+</form>

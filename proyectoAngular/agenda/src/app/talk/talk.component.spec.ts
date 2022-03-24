@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TalkComponentComponent } from './talk-component.component';
+import { TalkComponent } from './talk.component';
 
-describe('TalkComponentComponent', () => {
-  let component: TalkComponentComponent;
-  let fixture: ComponentFixture<TalkComponentComponent>;
+describe('TalkComponent', () => {
+  let component: TalkComponent;
+  let fixture: ComponentFixture<TalkComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ TalkComponentComponent ]
+      declarations: [ TalkComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(TalkComponentComponent);
+    fixture = TestBed.createComponent(TalkComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
